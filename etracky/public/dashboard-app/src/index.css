@@ -1,0 +1,40 @@
+:root {
+  --defaultBoxShadow: rgba(0, 0, 0, 0.133);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  padding: 4rem;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(185, 183, 183);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #7f8c8d;
+  border-radius: 2rem;
+}
+a {
+  text-decoration: none;
+}
+.util-pillBtn {
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+}
+@media (max-width: 950px) {
+  body {
+    padding: 0;
+  }
+}

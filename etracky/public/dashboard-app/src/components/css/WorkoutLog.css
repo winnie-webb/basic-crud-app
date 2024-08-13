@@ -1,0 +1,156 @@
+.workoutlog {
+  padding: 3rem;
+  height: 100%;
+  --exerciseBorderColor: rgb(221, 221, 221);
+  background-color: #ecf0f1;
+}
+.workoutlog__heading {
+  font-size: 2.5rem;
+}
+.missing {
+  color: red !important;
+}
+.workoutlog__exerciseName {
+  font-size: 1.6rem;
+  color: rgb(100, 100, 100);
+  display: inline-block;
+}
+.workoutlog__add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30%;
+}
+.workoutlog__inputsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.workoutlog__inputsWrapper label {
+  font-size: 1.4rem;
+}
+.MuiInputBase-root {
+  margin: 1rem;
+}
+#date-picker-inline,
+#time-picker {
+  font-size: 1.4rem;
+}
+.workoutlog__input {
+  margin: 2rem 1rem;
+}
+.workoutlog__addInput {
+  padding: 1.3rem;
+  width: 30rem;
+  box-shadow: 0 0.2rem 2rem var(--defaultBoxShadow);
+  text-transform: capitalize;
+}
+.rdrCalendarWrapper {
+  position: absolute;
+  bottom: 20rem;
+  z-index: 100;
+  box-shadow: 0 0.2rem 2rem var(--defaultBoxShadow);
+}
+.workoutlog__dateInput {
+  padding: 0.8rem;
+}
+.workoutlog__addSubmit {
+  padding: 1.4rem;
+  width: 25rem;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+}
+.workoutlog__addSubmit:hover {
+  background-color: rgba(52, 152, 219, 0.849);
+}
+.workoutlog__exerciseWrapper {
+  overflow-y: scroll;
+  height: 30rem;
+  scroll-behavior: smooth;
+  margin-top: 4rem;
+}
+.workoutlog__exercise {
+  width: 70%;
+  list-style: none;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  color: rgb(58, 58, 58);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  text-transform: capitalize;
+  box-shadow: 0 0.2rem 2rem var(--defaultBoxShadow);
+  border-radius: 0.2rem;
+}
+.workoutlog__exerciseCompleted {
+  margin: 1rem;
+}
+.workoutlog__exerciseIcons {
+  display: flex;
+  position: absolute;
+  right: 4rem;
+}
+.workoutlog__exerciseContent span {
+  font-size: 1.3rem;
+  display: block;
+  padding: 0.5rem;
+  margin-left: 2rem;
+}
+.exercise-completed {
+  background-color: rgba(0, 0, 0, 0.171);
+}
+.workoutlog__exerciseEditor {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+.workoutlog__exerciseEditor__submit {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 0.3rem;
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+@media (max-width: 950px) {
+  .workoutlog__add {
+    margin: 4rem 0;
+  }
+  .workoutlog__inputsWrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .workoutlog__exerciseIcons {
+    position: relative;
+    right: 0;
+  }
+}
+.loader {
+  border: 3px white solid;
+  border-top: 3px blue solid;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  animation: load 1s infinite;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+@keyframes load {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 650px) {
+  .workoutlog__exerciseWrapper {
+    height: auto;
+    overflow: none;
+  }
+}

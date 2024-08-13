@@ -1,0 +1,64 @@
+.analytics {
+  background-color: #ecf0f1;
+  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.analytics__wrapperTop {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.analytics__cardTop {
+  text-align: center;
+  height: auto;
+  width: 30%;
+  margin: 2rem;
+  padding: 3rem;
+  z-index: 2;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+.analytics__cardTop__headingCompleted + .analytics__cardTop__content {
+  color: #2ecc71;
+}
+.analytics__cardTop__headingMissing + .analytics__cardTop__content {
+  color: #e74c3c;
+}
+.analytics__cardTop__heading {
+  font-size: 2rem;
+  padding: 1rem;
+  color: #34495e;
+}
+.analytics__cardTop__content {
+  font-size: 3rem;
+}
+.analytics__wrapperBottom {
+  grid-template-columns: 1fr;
+  padding: 2rem;
+}
+.analytics__cardBottom {
+  padding: 1rem;
+  box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chartjs-render-monitor {
+  width: 80%;
+  height: 90%;
+}
+
+@media (max-width: 600px) {
+  .analytics__wrapperTop {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .analytics__cardTop {
+    width: 60%;
+  }
+}
